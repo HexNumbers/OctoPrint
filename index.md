@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+# OctoPrint / OctoPi quality of life scripts
 
-You can use the [editor on GitHub](https://github.com/HexNumbers/OctoPrint/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Screensaver management for TFT+TouchUI
+Here's how to turn the screensaver off when the printing starts and turn it back on when the printing is done.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+1. grab the scripts from [screensaver folder here](https://github.com/HexNumbers/OctoPrint/tree/master/screensaver) and put them into the pi home folder
+2. edit the OctoPrint's `config.yaml` - it hides under `~/.octoprint`, include the section below (you might need to change the paths to the scripts):
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HexNumbers/OctoPrint/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+events:
+    enabled: true
+    subscriptions:
+    -   command: **/home/pi/screensaver/startPrint.sh**
+        event: PrintStarted
+        type: system
+    -   command: **/home/pi/screensaver/endPrint.sh**
+        event: PrintDone
+        type: system
+```
