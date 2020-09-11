@@ -5,6 +5,7 @@ Here's how to turn the screensaver off when the printing starts and turn it back
 
 1. grab the scripts from [screensaver folder here](https://github.com/HexNumbers/OctoPrint/tree/master/screensaver) and put them into the pi home folder
 2. edit the OctoPrint's `config.yaml` - it hides under `~/.octoprint`, include the section below (you might need to change the paths to the scripts):
+
 ```
 events:
     enabled: true
