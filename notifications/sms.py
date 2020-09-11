@@ -25,7 +25,7 @@ def send():
         else:
             image.save(fp, Image.registered_extensions()['.jpg'])
         img = MIMEImage(fp.getvalue(), 'jpeg; name="print.jpg"')
-        img.add_header('Content-Disposition', 'attachment; filename="print.jpg"$
+        img.add_header('Content-Disposition', 'attachment; filename="print.jpg"')
         img.add_header('Content-ID', '<thingy>')
         img.add_header('X-Attachment-Id', 'thingy')
         email['From'] = GMAIL_USERNAME
