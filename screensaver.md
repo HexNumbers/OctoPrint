@@ -14,3 +14,5 @@ here's how to turn the screensaver off when the printing starts and turn it back
             type: system
     ```
 3. restart OctoPrint and enjoy your new screensaver behavior!
+
+[{BACK}](https://hexnumbers.github.io/OctoPrint/)
