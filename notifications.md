@@ -1,6 +1,6 @@
 # notifications through SMS for OctoPrint
-here's how to receive the sms notification when the print is complete (with the picture of your thingy!)\
-\
+here's how to receive the sms notification when the print is complete (with the picture of your thingy!)  
+  
 1. register an email account, anything will do, my example uses gmail
 2. for gmail, enable "less secure apps authorization" here -> https://myaccount.google.com/lesssecureapps
 note: make sure you are doing it for the new account you created at step 1
@@ -26,6 +26,6 @@ note: make sure you are doing it for the new account you created at step 1
 		```
 	- Option B: if you are using the [screensaver scripts](https://hexnumbers.github.io/OctoPrint/screensaver), just add `python /home/pi/notifications/sms.py &` to your endPrint.sh
 6. restart OctoPrint, add a contact with a cute picture for your printer's email for some additional personality, enjoy getting the messages when the print is done
-\
-\
+  
+  
 [{BACK}](https://hexnumbers.github.io/OctoPrint/)
