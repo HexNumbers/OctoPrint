@@ -9,10 +9,10 @@ Here's how to turn the screensaver off when the printing starts and turn it back
 events:
     enabled: true
     subscriptions:
-    -   command: **/home/pi/screensaver/startPrint.sh**
+    -   command: /home/pi/screensaver/startPrint.sh
         event: PrintStarted
         type: system
-    -   command: **/home/pi/screensaver/endPrint.sh**
+    -   command: /home/pi/screensaver/endPrint.sh
         event: PrintDone
         type: system
 ```
