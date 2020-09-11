@@ -11,7 +11,7 @@ note: make sure you are doing it for the new account you created at step 1
 		- AT&T: @mms.att.net
 		- Verizon: @vtext.com
 		- Sprint: @page.nextel.com
-	    if your carrier is not listed - you'll have to do your own research. if your carrier doesn't provide this service, you'll have to create your own script using some other means, sorry ¯\\_(ツ)_/¯
+	    if your carrier is not listed - you'll have to do your own research. if your carrier doesn't provide this service, you'll have to create your own script using some other means, sorry ¯\\__(ツ)__/¯
 	* SNAP_URL is the URL your mjpg-streamer or what have you is using for snapshots, the same that is configured in OctoPrint
 	* MESSAGE is self-explanatory too
 	* ROTATE_IMAGE - my webcam is upside down, the general consensus is that it's easier to use tricks like CSS image rotation than make mjpg-streamer rotate the stream for a non-pi USB cam. if you set this to true, the script will rotate the snapshot 180 degrees.
