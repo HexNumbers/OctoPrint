@@ -10,7 +10,8 @@ note: make sure you are doing it for the new account you created at step 1
 	* RECEPIENT is where all the magic happens, US carriers offer the email to sms gateways that the script is using for T-Mobile it's <your number>@tmomail.net. here's a short list for other carriers:
 		- AT&T: @mms.att.net
 		- Verizon: @vtext.com
-		- Sprint: @page.nextel.com
+		- Sprint: @page.nextel.com  
+	      
 	    if your carrier is not listed - you'll have to do your own research. if your carrier doesn't provide this service, you'll have to create your own script using some other means, sorry `¯\_(ツ)_/¯`
 	* SNAP_URL is the URL your mjpg-streamer or what have you is using for snapshots, the same that is configured in OctoPrint
 	* MESSAGE is self-explanatory too
