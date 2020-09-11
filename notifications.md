@@ -2,7 +2,7 @@
 here's how to receive the sms notification when the print is complete (with the picture of your thingy!)  
   
 1. register an email account, anything will do, my example uses gmail
-2. for gmail, enable "less secure apps authorization" here -> https://myaccount.google.com/lesssecureapps
+2. for gmail, enable "less secure apps authorization" here -> https://myaccount.google.com/lesssecureapps  
 note: make sure you are doing it for the new account you created at step 1
 3. grab the scripts from [notifications folder here](https://github.com/HexNumbers/OctoPrint/tree/master/notifications) and put them into the pi home folder, say under `/home/pi/notifications`
 4. edit the script:
